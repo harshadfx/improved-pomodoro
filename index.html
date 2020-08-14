@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+    <header>
+        <title>Study Timer</title>
+        <link rel="Stylesheet" href="style.css">
+    </header>
+    <body>
+        <h1>Welcome to Study Timer</h1>
+        <div id="content">
+            <form id="PomodorroTimer" name="PomodorroTimer">
+                <div id="studytimer">
+                    <label for="study">Study Time</label>
+                    <input class="minutes" type="number" name="study" value="00" min="0" max="60"/>
+                    <span class="colon">:</span>
+                    <input class="seconds" type="number" value="00" min="0" max="60"/>
+                </div>
+                <div id="reviewtimer">
+                    <label for="review">Review</label>
+                    <input class="minutes" type="number" name="review" value="00" min="0" max="60"/>
+                    <span class="colon">:</span>
+                    <input class="seconds" type="number" value="00" min="0" max="60"/>
+                </div>
+                <div id="resttimer">
+                    <label for="rest">Rest</label>
+                    <input class="minutes" type="number" name="rest" value="00" min="0" max="60"/>  
+                    <span class="colon">:</span>
+                    <input class="seconds" type="number" value="00" min="0" max="60"/>
+                </div><br><br>
+                <input type="submit" id="startTimer" value="Start">
+                <input type="reset" id="resetTimer" value="Reset">
+            </form>
+            <audio controls id="music" hidden>
+                <source src="_audio/bell-ringing-03.mp3" type="audio/mpeg">
+                Your browser does not support the audio element.
+            </audio>
+        </div>
+
+    <script src="script.js"></script>
+    </body>
+</html>
